@@ -1,4 +1,4 @@
-let container = document.querySelectorAll("main")[0];
+let container = document.querySelectorAll("ol")[0];
 console.log(container);
 fetch("https://api.github.com/repos/EmilyBonar/JavaScript30/contents/")
 	.then((response) => response.json())
@@ -14,7 +14,9 @@ fetch("https://api.github.com/repos/EmilyBonar/JavaScript30/contents/")
 				myDiv.id = element.name;
 
 				//Add your content to the DIV
-				myDiv.innerHTML = `<p><a href="${element.name}">${element.name}</a></p>`;
+				myDiv.innerHTML = `<li><a href="${element.name}">${element.name.slice(
+					5,
+				)}</a></li>`;
 
 				//Finally, append the element to the HTML body
 
