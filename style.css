@@ -23,3 +23,7 @@ main {
 ol {
 	display: block;
 }
+
+a:visited:not(.badge) {
+	color: blue;
+}

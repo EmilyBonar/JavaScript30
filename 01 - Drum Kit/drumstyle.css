@@ -1,0 +1,31 @@
+.container {
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.key {
+	padding: 30px;
+	margin: 5px;
+	background-color: rgba(255, 255, 255, 0.25);
+	border: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.key:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+p {
+	margin: 5px 0;
+}
+
+.effect {
+	color: rgb(255, 74, 74);
+}
