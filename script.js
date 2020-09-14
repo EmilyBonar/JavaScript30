@@ -1,3 +1,5 @@
+let container = document.querySelectorAll("main")[0];
+console.log(container);
 fetch("https://api.github.com/repos/EmilyBonar/JavaScript30/contents/")
 	.then((response) => response.json())
 	.then((data) => {
@@ -15,7 +17,8 @@ fetch("https://api.github.com/repos/EmilyBonar/JavaScript30/contents/")
 				myDiv.innerHTML = `<p><a href="${element.name}">${element.name}</a></p>`;
 
 				//Finally, append the element to the HTML body
-				document.body.appendChild(myDiv);
+
+				container.appendChild(myDiv);
 			}
 		});
 	});
