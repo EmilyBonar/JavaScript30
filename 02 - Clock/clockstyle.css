@@ -1,0 +1,40 @@
+.clock {
+	position: absolute;
+	width: 100%;
+	top: 25%;
+}
+
+.face {
+	border-radius: 50%;
+	margin: auto;
+	border: solid 10px;
+	border-color: white;
+	box-sizing: border-box;
+	--clock-size: 400px;
+	width: var(--clock-size);
+	height: var(--clock-size);
+	position: relative;
+}
+
+.hand {
+	background-color: black;
+	height: 5px;
+	width: calc(var(--clock-size) / 2);
+	width: 45%;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transition: 0.01s all;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	transform-origin: 100%;
+}
+
+.hour {
+	width: 40%;
+}
+.minute {
+	width: 45%;
+}
+.second {
+	width: 48%;
+}
