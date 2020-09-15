@@ -1,0 +1,32 @@
+body {
+	--color: #87cefa;
+	--spacing: 10px;
+	--blur: 10px;
+	background-color: var(--color);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin: 50px auto;
+	border-radius: 10px;
+}
+
+.inputs {
+	margin: 20px 0 0 0;
+}
+
+img {
+	width: 800px;
+	max-width: 50%;
+	margin: 50px;
+	border: solid var(--spacing);
+	border-color: var(--color);
+	-webkit-filter: blur(var(--blur));
+	filter: blur(var(--blur));
+}
