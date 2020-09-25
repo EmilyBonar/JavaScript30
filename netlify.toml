@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/JavaScript30"
+  to = "https://j30.mysearch.com"
+  status = 200
+  force = true
