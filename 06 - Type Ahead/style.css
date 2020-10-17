@@ -1,0 +1,43 @@
+body {
+	background-color: #ffc004;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+}
+
+input {
+	width: 50%;
+	height: 100px;
+	font-size: xx-large;
+	text-align: center;
+	border: none;
+}
+
+ul {
+	padding: 0;
+	position: relative;
+	margin: 0;
+}
+
+li {
+	background-color: white;
+	list-style-type: none;
+	width: 500px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+}
+
+li:nth-child(odd) {
+	transform: perspective(100px) rotateX(3deg);
+	background-color: wheat;
+}
+
+li:nth-child(even) {
+	transform: perspective(100px) rotateX(-3deg);
+}
